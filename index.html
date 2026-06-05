@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pertanyaan Penting</title>
+
+<style>
+body{
+    text-align:center;
+    font-family:'Comic Sans MS', cursive;
+    margin-top:100px;
+    background: #fff0f5;
+}
+
+h1{
+    color:#ff69b4;
+}
+
+button{
+    border:none;
+    padding:15px 30px;
+    margin:10px;
+    border-radius:999px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+button:hover{
+    transform:scale(1.1);
+}
+
+button:first-of-type{
+    background:#ff69b4;
+    color:white;
+}
+
+#no{
+    position:absolute;
+    background:#ffffff;
+    color:#ff69b4;
+    border:2px solid #ff69b4;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Mau traktir aku es krim gaa? 🍦</h1>
+
+<button onclick="alert('Aku tau kamu baik 😗💖')">
+    🍦 Traktir Dong
+</button>
+
+<button id="no">
+    😤 Gamau
+</button>
+
+<script>
+const noBtn = document.getElementById("no");
+
+noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * (window.innerWidth - 100);
+    const y = Math.random() * (window.innerHeight - 50);
+
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
